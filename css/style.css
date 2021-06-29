@@ -1,0 +1,303 @@
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --basic-light-grey: #a6a6a6;
+  --basic-darkgrey: #283136;
+  --basic-light: #EEEEEE;
+  --basic-coral: #FB565A;
+  --special-coral: #E74246;
+  --click-coral:#D7373B;
+  --basic-green: #00CA74;
+  --special-green:#00BC6C;
+  --click-green: #00AA62;
+  --basic-yellow: #EFC849;
+  --special-yellow: #EAB534;
+  --click-yellow:#E5A722;
+  --special-light:#DFDFDF;
+  --click-light: #D5D5D5;
+  --basic-grey:#4D4D4D;
+  --light-grey:#666666;
+}
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+
+}
+
+div {
+  background-color: var(--basic-light);
+}
+
+/* Main navigation index*/
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--basic-white);
+  background-color: transparent;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  text-decoration: none;
+  color: var(--basic-black);
+
+
+}
+.site-navigation a:hover
+{
+color:var(--basic-coral);
+}
+.site-navigation a:active {
+
+  color:var(--basic-black);
+  opacity: 0.3;
+}
+
+.site-navigation a:focus {
+  color:var(--basic-black);
+  text-decoration: none;
+  border-bottom: 1px solid #FB565A;
+}
+
+/* main index*/
+.container h1 {
+  visibility: hidden;
+
+}
+
+/* main catalog*/
+.main h1 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  text-transform: none;
+  text-align: center;
+}
+
+/*advantages index*/
+.advantages {
+  text-transform: none;
+}
+.advantages h2 {
+  visibility: hidden;
+}
+
+.advantages-item {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+
+.button {
+  line-height: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--basic-white);
+  background-color:  var(--basic-coral);
+}
+
+/* services index*/
+.services {
+  border-bottom: 2px solid #EEEEEE;
+}
+.services h2 {
+  visibility: hidden;
+}
+.services-list {
+  list-style: none;
+}
+.services-item h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+.services-item p {
+  text-transform: none;
+}
+.services-button-one {
+  background-color:var(--basic-green);
+}
+.services-button-two {
+  background-color:var(--basic-yellow);
+}
+
+/*features index*/
+.features h2 {
+  visibility: hidden;
+}
+.features-one {
+  text-transform: none;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+.features-two {
+  text-transform: none;
+}
+.features-list {
+  text-transform: none;
+  list-style: none;
+}
+.features-three {
+  font-weight: bold;
+}
+.features_list_second li{
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  list-style: none;
+  text-transform: none;
+}
+.features_list_second sup {
+  font-size: 26px;
+  line-height: 40px;
+}
+.features_list_second p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+/*client index*/
+.client h2 {
+  visibility: hidden;
+}
+.client-list {
+  list-style: none;
+}
+
+
+/*footer*/
+.footer-contacts h2 {
+  visibility: hidden;
+}
+.footer-social {
+  text-transform: none;
+}
+.footer-social h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+.footer-social-list{
+  list-style: none;
+}
+.social-button {
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius : 50px;
+}
+.social-button img {
+  border-radius : 50px;
+}
+.social-button:hover {
+  background: linear-gradient(0deg, #E74246, #E74246);
+}
+.social-button:focus {
+  background: linear-gradient(0deg, #D7373B, #D7373B);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/*filt-catalog*/
+.filter h2 {
+  visibility: hidden;
+}
+
+.filter p{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.filter-list a{
+  text-decoration: none;
+  line-height: 20px;
+  color:var(--basic-black);
+  opacity: 0.3;
+}
+.filter-list a:hover {
+  color:var(--basic-black);
+  opacity: 0.6;
+}
+.filter-list a:focus {
+  color:var(--basic-black);
+  opacity: 1;
+
+}
+.filter legend{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.filter ul {
+  list-style: none;
+}
+.filter label {
+  color:var(--basic-darkgrey)
+}
+.button-filter {
+  border-radius: 3px;
+  background-color:  var(--basic-light);
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+/*templates-list*/
+.templates h2 {
+  visibility: hidden;
+}
+.templates-list{
+  list-style: none;
+}
+.templates-list a {
+  text-decoration: none;
+  }
+.templates-list h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+.templates-list h3:hover {
+  color: var(--basic-coral);
+}
+.templates-list h3:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.templates-list p {
+  list-style: 18;
+  text-transform: none;
+  color: var(--light-grey);
+}
+.templates-list-two {
+  list-style: none;
+}
+.templates-list-two a {
+  color: var(--basic-black);
+  background-color:var(--basic-light);
+  border-radius: 3px;
+}
+.templates-list-two a:hover,
+.templates-list-two a:focus  {
+  background-color:var(--special-light);
+}
+.templates-list-two a:active {
+  background-color:var(--click-light);
+  color: var(--basic-black);
+  opacity: 0.3;
+}

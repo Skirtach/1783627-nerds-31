@@ -1,51 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Каталог дизайн-студии Nerds</title>
       <link rel="icon" href="favicon.ico">
-    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+
   </head>
-  <body>
-    <header>
-        <nav>
-        <a href="index.html"><img src="/img/img/nerds-logo.png"  width="160" height="66" alt="Логотип дизайн-студии Nerds"></a>
-        <ul>
-         <li><a  href="#">студия</a></li> 
-         <li><a  href="#">клиенты</a></li> 
+  <body class="page-body">
+    <header class="main-header">
+        <nav class="main-navigation">
+        <a class="main-header-logo"  href="index.html"><img src="img/nerds-logo.svg"  width="160" height="66" alt="Логотип дизайн-студии Nerds"></a>
+        <ul class="site-navigation">
+         <li><a  href="#">студия</a></li>
+         <li><a  href="#">клиенты</a></li>
          <li><a  href="catalog.html">магазин</a></li>
          <li><a  href="#">контакты</a></li>
-         <li><a  href="#">корзина <img src="/img/img/basket.svg"  width="15" height="15" alt=""></a></li>
+         <li><a class="basket-link" href="#">корзина <img src="img/basket.svg"  width="15" height="15" alt=""></a></li>
         </ul>
         </nav>
       </header>
- <main>
+ <main class="main">
      <h1>Магазин готовых шаблонов</h1>
-     <section>
+     <section class="filter">
      <h2>Фильтр товаров</h2>
-     <div class="range-wrap">
-      <div class="range-slider">
-          <div class="label-range">от 1 до 10 с шагом 1</div>
-          <input id="range1" type="range" name="range1" min="1" max="10" step="1" value="5" />
-          <div class="label-range">от 4 до 32 с шагом 2</div>
-          <input id="range2" type="range" name="range2" min="4" max="32" step="2" value="16" />
-          <div class="label-range">от 0 до 100 с шагом 5</div>
-          <input id="range3" type="range" name="range3" min="0" max="100" step="5" value="50" />
-      </div>
-  </div>
-     <p>Стоимость:<meter min="0" max="15000">от 0 до 15000</meter></p>
-     <p>Сортировать по:</p>
-     <ul>
+
+
+     <p >Сортировать по:</p>
+     <ul class="filter-list">
        <li><a href="#">По цене</a></li>
-       <li>По типу</li>
-       <li>По названию</li>      
+       <li><a href="#">По типу</a></li>
+       <li><a href="#">По названию</a></li>
      </ul>
      <form method="get" action="https://echo.htmlacademy.ru"></form>
       <fieldset>
         <legend>Сетка:</legend>
         <ul>
           <li>
-            <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+            <input  type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
             <label for="filter-adaptive">Адаптивная</label>
           </li>
           <li>
@@ -83,55 +77,55 @@
           </li>
           <ul>
       </fieldset>
-      <button type="submit">Показать</button>
+      <button class="button button-filter" type="submit">Показать</button>
     </form>
     </section>
-    <section>
+    <section class="templates">
       <h2>Список готовых шаблонов</h2>
-      <ul>
+      <ul class="templates-list">
         <li>
           <a href="#">
             <h3>Sedona</h3>
-            <p><img src="/img/img/content image/Mask Group.jpg"  width="358" height="578" alt="Информационный сайт для туристов Sedona"></p>
+            <p><img src="img/content image/Mask Group.jpg"  width="358" height="578" alt="Информационный сайт для туристов Sedona"></p>
             <p> Информационный сайт <br> для туристов</p>
           </a>
-          <p><button type="button">9900 ₽ </button></p>
+          <p><button class="button"  type="button">9900 ₽ </button></p>
         </li>
         <li>
           <a href="#">
             <h3>Pink App</h3>
-            <p><img src="/img/img/content image/img-pink 1.jpg"  width="358" height="578"  alt="Продуктовый лендинг Pink App"></p>
+            <p><img src="img/content image/img-pink 1.jpg"  width="358" height="578"  alt="Продуктовый лендинг Pink App"></p>
             <p> Продуктовый лендинг <br> приложения для iOS и Android</p>
           </a>
-          <p><button type="button">9900 ₽ </button></p>
+          <p><button class="button "  type="button">9900 ₽ </button></p>
         </li>
         <li>
           <a href="#">
             <h3>Барбершоп "Бородинский"</h3>
-            <p><img src="/img/img/content image/img-barbershop 1.jpg"  width="358" height="578"  alt="Барбершоп Бородинский"></p>
+            <p><img src="img/content image/img-barbershop 1.jpg"  width="358" height="578"  alt="Барбершоп Бородинский"></p>
           </a>
         </li>
         <li>
           <a href="#">
             <h3>Товары ручной работы Mishka</h3>
-            <p><img src="/img/img/content image/img-mishka 1.jpg"  width="358" height="578"  alt="Cайт товаров ручной работы Mishka"></p>
+            <p><img src="img/content image/img-mishka 1.jpg"  width="358" height="578"  alt="Cайт товаров ручной работы Mishka"></p>
           </a>
         </li>
         <li>
           <a href="#">
             <h3>Онлайн обучение А+</h3>
-            <p><img src="/img/img/content image/img-aplus 1 (1).jpg"  width="358" height="578"  alt="Сайт онлайн обучения А+"></p>
+            <p><img src="img/content image/img-aplus 1 (1).jpg"  width="358" height="578"  alt="Сайт онлайн обучения А+"></p>
           </a>
         </li>
         <li>
           <a href="#">
             <h3>Кваст</h3>
-            <p><img src="img/img/content image/img-kvast 1.jpg"  width="358" height="578" alt="Промо-сайт производителя крафтового кваса"></p>
+            <p><img src="img/content image/img-kvast 1.jpg"  width="358" height="578" alt="Промо-сайт производителя крафтового кваса"></p>
             <p>Промо-сайт производителя <br> крафтового кваса</p>
           </a>
-          <p><button type="button">9900 ₽ </button></p>
+          <p><button class="button" type="button">9900 ₽ </button></p>
         </li>
-        <ul>
+        <ul class="templates-list-two" >
           <li>
             <a>1</a>
           </li>
@@ -147,17 +141,17 @@
         </ul>
         </ul>
     </section>
-    <footer>
-      <section>
-       <h2>Контакты</h2> 
-      <img src="/img/img/map 1.png" width="1440" height="416" alt="Карта">
-     <section>
+    <footer class="main-footer">
+      <section class="footer-contacts">
+       <h2>Контакты</h2>
+      <img src="img/map 1.png" width="1440" height="416" alt="Карта">
+     <section class="footer-social">
        <h2>Давайте дружить, это выгодно!</h2>
        <p>Скидка 10&percnt; для друзей из социальных сетей</p>
-       <ul >
-        <li><a href="#">В контакте <img src="/img/img/sochial/vk-icon.svg"  width="26" height="15" alt="" style="background-color: grey;"> </a></li>
-        <li><a href="#">Фейсбук <img src="/img/img/sochial/fb.svg"  width="12" height="22" alt="" style="background-color: grey;"> </a></li>
-        <li><a href="#">Инстаграмм <img src="/img/img/sochial/inst.svg"  width="21" height="21" alt="" style="background-color: grey;"> </a></li>
+       <ul class="footer-social-list">
+        <li><a class="social-button" href="#"><img src="img/sochial/vk-icon.svg"  width="26" height="15" alt="" > </a></li>
+        <li><a class="social-button" href="#"><img src="img/sochial/fb.svg"  width="12" height="22" alt=""> </a></li>
+        <li><a class="social-button" href="#"><img src="img/sochial/insta-icon.svg"  width="21" height="21" alt="" > </a></li>
        </ul>
      </section>
     </footer>
