@@ -42,9 +42,6 @@
 
   background-color: var(--basic-light);
 }
-.main-header-logo {
-
-  }
 
 /* Main navigation index*/
 
@@ -60,9 +57,7 @@
   margin: 0 auto;
   padding: 0 10px;
 }
-.main-header-bar {
 
-}
 .main-navigation-wrapper {
   display: grid;
   grid-template-columns: 1fr min-content;
@@ -71,6 +66,7 @@
 .site-navigation {
   margin: 0;
   padding: 0;
+  justify-self:center;
 
 }
 .user-navigation {
@@ -98,7 +94,8 @@ color:var(--basic-coral);
 
 .site-navigation a:focus,
 .user-navigation a:focus,
-.site-navigation-current a:not([href]){
+.site-navigation-current a:not([href]),
+.user-navigation-current a:not([href]){
   color:var(--basic-black);
   text-decoration: none;
   border-bottom: 1px solid #FB565A;
@@ -117,14 +114,6 @@ display: none;
 }
 
 
-/* main catalog*/
-.main-catalog h1 {
-  font-weight: 500;
-  font-size: 55px;
-  line-height: 55px;
-  text-transform: none;
-  text-align: center;
-}
 
 /*advantages index*/
 .advantages {
@@ -351,61 +340,95 @@ display: none;
 
 }
 
-.client-html {
+.client-html a {
   background-image: url("../img/customers/logo_htmlacademy 2.png");
   background-repeat: no-repeat;
   height:57px;
   width: 199px;
   opacity: 0.2;
+  display: inline-block;
 }
-.client-borodinski {
+.client-borodinski a {
   background-image: url("../img/customers/logo-2 2.png");
   background-repeat: no-repeat;
   height:90px;
   width: 209px;
   opacity: 0.2;
+  display: inline-block;
 }
-.client-pink {
+.client-pink a {
   background-image: url("../img/customers/logo-3 2.png");
   background-repeat: no-repeat;
   height:52px;
   width: 185px;
   opacity: 0.2;
+  display: inline-block;
 }
-.client-mishka {
+.client-mishka a {
   background-image: url("../img/customers/logo-4 2.png");
   background-repeat: no-repeat;
   height:84px;
   width: 173px;
   opacity: 0.2;
+  display: inline-block;
 }
-.client-html:active {
+.client-html:active a {
   background-image: url("../img/customers/logo_htmlacademy 2.png");
   background-repeat: no-repeat;
   height:57px;
   width: 199px;
   opacity: 0.1;
 }
-.client-borodinski:active {
+.client-borodinski:active a {
   background-image: url("../img/customers/logo-2 2.png");
   background-repeat: no-repeat;
   height:90px;
   width: 209px;
   opacity: 0.1;
 }
-.client-pink:active{
+.client-pink:active a {
   background-image: url("../img/customers/logo-3 2.png");
   background-repeat: no-repeat;
   height:57px;
   width: 199px;
   opacity: 0.1;
 }
-.client-mishka:active {
+.client-mishka:active a {
   background-image: url("../img/customers/logo-4 2.png");
   background-repeat: no-repeat;
   height:84px;
   width: 173px;
   opacity: 0.1;
+
+}
+.client-mishka:hover a {
+
+  background-image: url("../img/customers/logo-4 2.png");
+  background-repeat: no-repeat;
+  height:84px;
+  width: 173px;
+  opacity: 1;
+}
+.client-pink:hover a {
+  background-image: url("../img/customers/logo-3 2.png");
+  background-repeat: no-repeat;
+  height:57px;
+  width: 199px;
+  opacity: 1;
+}
+.client-borodinski:hover a {
+  background-image: url("../img/customers/logo-2 2.png");
+  background-repeat: no-repeat;
+  height:90px;
+  width: 209px;
+  opacity: 1;
+}
+.client-html:hover a {
+  background-image: url("../img/customers/logo_htmlacademy 2.png");
+  background-repeat: no-repeat;
+  height:57px;
+  width: 199px;
+  opacity: 1;
 }
 
 /*footer*/
@@ -460,12 +483,41 @@ display: none;
   background: linear-gradient(0deg, #D7373B, #D7373B);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
-
-/*filt-catalog*/
-.filter h2 {
-  visibility: hidden;
+/* main catalog*/
+.page-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  text-transform: none;
+  text-align: center;
+  background-color: var(--basic-light);
+  margin: 0;
+  padding-top: 72px;
+  padding-bottom: 108px;
+}
+.page-catalog {
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: ;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
 }
 
+/*filt-catalog*/
+
+.filter h2 {
+
+}
+.page-catalog {
+  outline: 5px solid rgba(4, 0, 255, 0.7);
+  outline-offset: -5px ;
+  margin: 0;
+}
+.page-catalog .filter-form {
+  outline: 5px solid rgba(255, 0, 247, 0.7);
+  outline-offset: -5px ;
+}
 .filter p{
   font-weight: bold;
   font-size: 18px;
@@ -514,8 +566,12 @@ display: none;
 }
 
 /*templates-list*/
+.templates {
+  outline: 5px solid rgba(255, 0, 247, 0.7);
+  outline-offset: -5px ;
+}
 .templates h2 {
-  visibility: hidden;
+  display: none;
 }
 .templates-list{
   list-style: none;
